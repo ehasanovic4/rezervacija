@@ -356,7 +356,7 @@ class EvidencijaTest {
     void testDaLiJeSlobodna7() {
         evidencija.rezervisi(testneRezervacije);
 
-        boolean slobodna = evidencija.daLiJeSlobodna("0-01", LocalDate.of(2019,12,13),
+       boolean slobodna = evidencija.daLiJeSlobodna("0-01", LocalDate.of(2019,12,13),
                 LocalTime.of(10,0), LocalTime.of(12,0));
 
         assertFalse(slobodna);
